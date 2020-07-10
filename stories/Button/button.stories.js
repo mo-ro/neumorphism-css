@@ -1,6 +1,6 @@
-export default {
-  title: 'Button',
-};
+import { storiesOf } from '@storybook/html';
 
-import button from './button.html';
-export const Button = () => button
+import Button from './button.template';
+
+storiesOf('Button', module)
+  .add('Button', () => Button());
