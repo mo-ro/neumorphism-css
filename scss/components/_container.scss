@@ -1,0 +1,9 @@
+.n-container {
+  box-shadow: $shadow-s;
+  border-radius: 8px;
+  padding: 12px 20px;
+
+  &.-inner {
+    box-shadow: $shadow-inner-s;
+  }
+}
