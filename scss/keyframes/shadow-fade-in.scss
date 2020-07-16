@@ -1,0 +1,14 @@
+@keyframes shadow-fade-in {
+  0% {
+    box-shadow: $shadow-inner-s;
+  }
+  50% {
+    box-shadow: 0 0 0 #ffffff inset, 0 0 0 rgba(2, 27, 50, 0.16) inset;
+  }
+  51% {
+    box-shadow: 0 0 0 #ffffff, 0 0 0 rgba(2, 27, 50, 0.16);
+  }
+  100% {
+    box-shadow: $shadow-s;
+  }
+}
