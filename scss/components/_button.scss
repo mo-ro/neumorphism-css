@@ -1,3 +1,25 @@
-button {
-  background-color: $red;
+.n-button {
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  box-shadow: $shadow-s;
+  padding: 0 34px;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: $base;
+  cursor: pointer;
+  transition: all 0.3s, font-size 0.1s;
+  animation: shadow-fade-in 0.15s ease-in;
+  text-align: center;
+
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $base;
+    box-shadow: $shadow-inner-s;
+    animation: shadow-fade-out .15s ease-in;
+  }
 }
