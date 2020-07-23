@@ -1,0 +1,51 @@
+.n-toggle {
+  visibility: hidden;
+  
+  &+div {
+    width: 60px;
+    height: 32px;
+    box-shadow: $shadow-inner-xs;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: $base;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      box-shadow: $shadow-s;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: left .15s ease-out;
+    }
+    
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      background-color: #aaa;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: left .15s ease-out, background-color .15s ease-out;
+    }
+  }
+  
+  &:checked+div {
+    &::before {
+      left: 34px;
+    }
+    &::after {
+      background-color: $theme;
+      left: 38px;
+    }
+  }
+}
