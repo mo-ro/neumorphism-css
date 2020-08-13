@@ -1,0 +1,22 @@
+.n-tab {
+  box-shadow: $shadow-s;
+  padding: 6px 20px;
+  border-radius: 4px;
+
+  > button {
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background-color: $base;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &.-active {
+      box-shadow: $shadow-inner-s;
+    }
+  }
+}
