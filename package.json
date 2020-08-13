@@ -1,5 +1,5 @@
 {
-  "name": "neumorphism-css",
+  "name": "@moro/neumorphism-css",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,8 +13,8 @@
     "url": "git+https://github.com/mo-ro/neumorphism-css.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "mo-ro",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mo-ro/neumorphism-css/issues"
   },
